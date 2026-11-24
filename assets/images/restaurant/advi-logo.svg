@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="94" fill="#17382b" stroke="#c29a5b" stroke-width="6"/>
+  <path d="M100 42C78 67 58 89 58 119c0 28 18 47 42 47s42-19 42-47c0-30-20-52-42-77z" fill="#f7f2e7"/>
+  <path d="M100 72c-11 17-18 30-18 44 0 15 8 25 18 25s18-10 18-25c0-14-7-27-18-44z" fill="#c29a5b"/>
+  <path d="M100 48v118M66 98c15 8 23 16 34 29M134 98c-15 8-23 16-34 29" fill="none" stroke="#17382b" stroke-width="6" stroke-linecap="round"/>
+  <text x="100" y="183" fill="#f7f2e7" font-family="Georgia, serif" font-size="22" font-weight="700" text-anchor="middle">ADVI</text>
+</svg>

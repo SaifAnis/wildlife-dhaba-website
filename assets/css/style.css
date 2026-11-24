@@ -1,0 +1,690 @@
+/* 1. Basic styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #243129;
+  background: #f7f2e7;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 2. Header */
+.site-header {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ffffff30;
+}
+
+.nav-wrap {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.brand,
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.nav-list {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-list a {
+  display: block;
+  padding: 8px 0;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: #c29a5b;
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ffffff70;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 3. Hero and buttons */
+.hero {
+  min-height: 720px;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  background:
+    linear-gradient(to right, #082016d9, #08201673),
+    url("../images/restaurant/countryside-hero.jpg") center / cover;
+}
+
+.hero-content {
+  max-width: 730px;
+  padding: 170px 0 92px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #c29a5b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 96px;
+  line-height: 0.92;
+}
+
+.hero-lead {
+  max-width: 580px;
+  margin: 24px 0 32px;
+  color: #ffffffdd;
+  font-size: 18px;
+}
+
+.hero-actions,
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.inline-actions {
+  margin-top: 32px;
+}
+
+.button {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #c29a5b;
+  color: #0e291f;
+}
+
+.button-secondary {
+  border-color: #ffffff80;
+  background: transparent;
+  color: #ffffff;
+}
+
+.button-green {
+  background: #17382b;
+  color: #ffffff;
+}
+
+/* 4. Introduction and headings */
+.intro-strip {
+  margin-top: -36px;
+  position: relative;
+  z-index: 5;
+}
+
+.intro-card {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 38px;
+  border-radius: 22px;
+  background: #fffdf8;
+  box-shadow: 0 18px 50px #182f2420;
+}
+
+.intro-card h2,
+.section-heading h2,
+.animal-heading h2,
+.cta-panel h2,
+.dialog-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+}
+
+.intro-card h2 {
+  font-size: 38px;
+}
+
+.section {
+  padding: 110px 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+
+.section-heading h2,
+.animal-heading h2,
+.cta-panel h2 {
+  font-size: 58px;
+  line-height: 1;
+}
+
+.section-heading p {
+  max-width: 470px;
+  margin: 0;
+  color: #687268;
+}
+
+/* 5. Food and testimonial cards */
+.featured-grid,
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dish-card,
+.quote-card {
+  border: 1px solid #17382b20;
+  border-radius: 22px;
+  background: #fffdf8;
+}
+
+.dish-card {
+  overflow: hidden;
+}
+
+.dish-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.dish-copy {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+}
+
+.dish-copy h3 {
+  margin: 0 0 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.dish-copy p {
+  margin: 0;
+  color: #687268;
+  font-size: 14px;
+}
+
+.dish-price {
+  color: #7a5538;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.testimonials {
+  background: #ede5d3;
+}
+
+.quote-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+}
+
+.quote-mark {
+  color: #c29a5b;
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+}
+
+.quote-card blockquote {
+  margin: 20px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.quote-card cite {
+  color: #687268;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 6. Animal cards */
+.animals-section {
+  color: #ffffff;
+  background: #0e291f;
+}
+
+.animal-heading {
+  max-width: 680px;
+  margin-bottom: 42px;
+}
+
+.animal-heading p {
+  max-width: 590px;
+  margin: 20px 0 0;
+  color: #ffffffb3;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.animal-card {
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ffffff20;
+  border-radius: 22px;
+  background: #17382b;
+}
+
+.animal-card.emu {
+  grid-row: span 2;
+  min-height: 858px;
+}
+
+.animal-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal-card-copy {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 26px;
+  background: #0e291fcc;
+}
+
+.animal-card-copy h3 {
+  margin: 0 0 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+}
+
+.animal-card-copy p {
+  margin: 0;
+  color: #ffffffbf;
+  font-size: 14px;
+}
+
+/* 7. Gallery */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-rows: 240px 240px;
+  gap: 20px;
+}
+
+.gallery-feature,
+.gallery-tile {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 22px;
+  background: #17382b;
+}
+
+.gallery-feature {
+  grid-row: 1 / 3;
+}
+
+.gallery-feature img,
+.gallery-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-feature figcaption,
+.gallery-tile figcaption {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #0e291fcc;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 8. Visit area and footer */
+.cta-section {
+  padding: 44px 0 70px;
+}
+
+.cta-panel {
+  min-height: 330px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 48px;
+  border-radius: 28px;
+  color: #ffffff;
+  background: url("../images/gallery/dining-space.jpg") center / cover;
+}
+
+.cta-panel > div {
+  max-width: 650px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #0e291fe6;
+}
+
+.cta-panel p {
+  color: #ffffffbf;
+}
+
+.site-footer {
+  padding: 62px 0 24px;
+  color: #ffffffbf;
+  background: #0e291f;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 0.9fr;
+  gap: 50px;
+  padding-bottom: 42px;
+}
+
+.footer-brand {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-grid p,
+.footer-grid li {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.footer-grid h3 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  border-top: 1px solid #ffffff20;
+  font-size: 13px;
+}
+
+/* 9. Reservation popup */
+.reservation-dialog {
+  width: 520px;
+  max-width: calc(100% - 28px);
+  padding: 38px;
+  border: 0;
+  border-radius: 24px;
+  background: #fffdf8;
+  box-shadow: 0 24px 80px #00000050;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #17382b20;
+  border-radius: 50%;
+  background: #f7f2e7;
+  cursor: pointer;
+}
+
+.dialog-heading h2 {
+  margin: 0 0 22px;
+  font-size: 36px;
+}
+
+.reservation-form {
+  display: grid;
+  gap: 14px;
+}
+
+.reservation-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reservation-form input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid #17382b20;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.reservation-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.reservation-form .button {
+  width: 100%;
+  margin-top: 4px;
+  border: 0;
+}
+
+.reservation-message {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f7f2e7;
+  color: #17382b;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 10. Responsive styles */
+@media (max-width: 980px) {
+  .nav-list {
+    position: absolute;
+    top: 82px;
+    right: 20px;
+    left: 20px;
+    display: none;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 16px;
+    background: #0e291f;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    min-height: 72px;
+  }
+
+  .nav-list {
+    top: 72px;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding: 140px 0 76px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .intro-strip {
+    margin-top: 0;
+  }
+
+  .intro-card,
+  .featured-grid,
+  .quote-grid,
+  .footer-grid,
+  .experience-grid,
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-card {
+    gap: 12px;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-heading h2,
+  .animal-heading h2,
+  .cta-panel h2 {
+    font-size: 42px;
+  }
+
+  .animal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .animal-card,
+  .animal-card.emu {
+    grid-column: span 1;
+    grid-row: auto;
+    min-height: 340px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 390px 240px 240px;
+  }
+
+  .gallery-feature {
+    grid-row: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .reservation-fields,
+  .hero-actions,
+  .inline-actions {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .animal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-dialog {
+    padding: 28px 22px;
+  }
+}

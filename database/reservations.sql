@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS advi_restaurant;
+
+USE advi_restaurant;
+
+CREATE TABLE IF NOT EXISTS reservations (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(100) NOT NULL,
+  phone VARCHAR(30) NOT NULL,
+  booking_date DATE NOT NULL,
+  booking_time TIME NOT NULL,
+  guests INT UNSIGNED NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
